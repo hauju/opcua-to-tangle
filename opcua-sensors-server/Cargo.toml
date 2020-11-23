@@ -1,0 +1,14 @@
+[package]
+name = "i2th-opcua-sensors-server"
+authors = ["Hauke Jung <hauke.jung@outlook.de>"]
+edition = "2018"
+version = "0.1.0"
+
+[dependencies]
+chrono = "0.4"
+log = "0.4"
+opcua-console-logging = "0.8.0"
+opcua-core = "0.8.0"
+opcua-server = "0.8.0"
+openssl = "*"
+rand = "0.6.5"

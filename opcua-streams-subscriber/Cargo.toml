@@ -1,0 +1,29 @@
+[package]
+name = "i2th-opcua-streams-subscriber"
+version = "0.1.0"
+authors = ["Hauke Jung <hauke.jung@outlook.de>"]
+edition = "2018"
+
+[lib]
+name = "opcua_streams_subscriber"
+path = "src/lib.rs"
+
+[dependencies]
+opcua-core = "0.8.0"
+opcua-server = "0.8.0"
+opcua-console-logging = "0.8.0"
+serde = {version="1.0.110", features = ["derive"] }
+serde_derive = "1.0.110"
+serde_json = "1.0.53"
+chrono = "0.4"
+log = "0.4"
+
+anyhow = { version = "1.0", default-features = false }
+failure = "0.1.7"
+rand = "0.7.3"
+base64 = "^0.12"
+iota-streams = { git = "https://github.com/iotaledger/streams", branch = "develop" }
+tokio = {version = "0.2.18", features = ["macros"]}
+
+[dependencies.opcua-streams-types]
+path = "../opcua-streams-types"

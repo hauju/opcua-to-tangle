@@ -1,0 +1,26 @@
+[package]
+name = "i2th-opcua-streams-gateway"
+version = "0.1.0"
+authors = ["Hauke Jung <hauke.jung@outlook.de>"]
+edition = "2018"
+
+[lib]
+name = "opcua_streams_gateway"
+path = "src/lib.rs"
+
+[dependencies]
+opcua-core = "0.8.0"
+opcua-client = "0.8.0"
+opcua-server = "0.8.0"
+opcua-console-logging = "0.8.0"
+gateway_core = { git = "https://github.com/iot2tangle/streams-gateway-core", branch="master"}
+serde = {version="1.0.110", features = ["derive"] }
+serde_derive = "1.0.110"
+serde_json = "1.0.53"
+tokio = {version = "0.2.18", features = ["macros"]}
+rust-crypto = "0.2.36"
+rand = "0.7.3"
+base64 = "^0.12"
+
+[dependencies.opcua-streams-types]
+path = "../opcua-streams-types"

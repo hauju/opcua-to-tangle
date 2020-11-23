@@ -1,0 +1,8 @@
+[workspace]
+
+members = [
+    "opcua-sensors-server",
+    "opcua-streams-gateway",
+    "opcua-streams-subscriber",
+    "opcua-streams-types"
+]

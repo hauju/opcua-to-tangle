@@ -1,6 +1,6 @@
 # Overview
 
-The idea of the project is to combine the advantages of OPC UA and distributed ledger technology like IOTA Streams. The opcua-to-tangle project consists of three components.
+The idea of the project is to create a connectivity solution to combine the advantages of OPC UA and distributed ledger technology like IOTA Streams The opcua-to-tangle project consists of three components.
 
 1. The I2TH OPC UA Sensors Server is just an example server that reveals some OPC UA nodes we can connect to.​ In theory, any OPC UA server can be used.
 1. The I2TH OPC UA Streams Gateway connects e.g. to the OPC UA Sensors Server, fetch the sensor data and publish them to the tangle. The channel address is also provided via OPC UA. 
@@ -51,10 +51,12 @@ For simplicity, the instructions are only for running the components on the loca
 
 # Next steps and suggestions for improvement
 
-- Separating the Examples and Libraries.
-- Creating crates from the liberies.
-- Creating the docs for the liberies.
+- Separating the examples and libraries.
+- Creating crates from the libraries.
+- Creating the docs for the libraries.
 - Adding CI / CD workflow.
+- Using keepy.
 - Implementing the channel exchange between gateway and subscriber via OPC UA.
 - Implementing the OPC UA Pub / Sub Model for the opcua-streams-gateway.
 - Creating a standardized OPC UA Information Model for IOT2Tangle and all used types.
+- Add the Historical Access functionality.

@@ -46,7 +46,11 @@ For simplicity, the instructions are only for running the components on the loca
     # Add the channel published by the OPC UA Streams Gateway
     cd opcua-streams-subscriber && cargo run --release -- <channel>
     ```
-1. Now you can connect to the servers with an OPC UA Client, trust the certificates and discover the nodes. I usually use the [UaExpert](https://www.unified-automation.com/products/development-tools/uaexpert.html), which is free to use but require an registration.
+1. Now you can connect to the servers with an OPC UA Client, trust the certificates and discover the nodes. I usually use the [UaExpert](https://www.unified-automation.com/products/development-tools/uaexpert.html), which is free to use but require an registration. The server have the following endpoints:
+
+- **I2TH OPC UA Sensors Server:** opc.tcp://localhost:4855
+- **I2TH OPC UA Streams Gateway:** opc.tcp://localhost:4860
+- **I2TH OPC UA Streams Subscriber:** opc.tcp://localhost:4870
 
 
 # Next steps and suggestions for improvement
